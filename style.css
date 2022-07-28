@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display:  flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-family: Montserrat, sans-serif;
+}
+
+form{
+    margin: 20px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    width:350px;
+}
+
+input{
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid black;
+}
+
+button{
+    padding:10px;
+    background-color: rgb(142, 192, 236);
+    border:unset;
+    cursor: pointer;
+
+}
+
+p{
+    margin-bottom: 13px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.item{
+    display: table-row;
+}
