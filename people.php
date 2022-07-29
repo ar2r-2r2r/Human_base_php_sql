@@ -44,7 +44,7 @@
                 if (!$connect) {
                     die("Ошибка: " . mysqli_connect_error());
                 }
-                $sql="SELECT FROM people WHERE id='$id'";
+                $sql="SELECT * FROM people WHERE id='$id'";
                 $result = mysqli_query($connect, $sql);
                 while($user=mysqli_fetch_array($result)){
                     $this->id=$user['id'];
@@ -93,7 +93,7 @@
                 die("Ошибка: " . mysqli_connect_error());
             }
             $id=$_POST['id'];
-            $sql="DELETE * FROM people WHERE id = '$id'";             //запрос на удаление по айди
+            $sql="DELETE FROM people WHERE id = '$id'";             //запрос на удаление по айди
             if($connect->query($sql)){
                 $_SESSION['delete']='Пользователь с id: ' .$id.' удалён';
                 
